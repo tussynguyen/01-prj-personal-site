@@ -1,1 +1,56 @@
+/* Basic styles for the website */
+
+body {
+    font-family: Georgia, serif; /* Sets the default font for all text */
+    background-color: #ffffff;      /* Light background color */
+    margin: 0;                     /* Remove default margin */
+    padding: 0;                    /* Remove default padding */
+    min-height: 100vh;             /* Make sure body fills the viewport */
+    min-width: 100vw;
+}
+
+/* Use a pseudo-element to show the background image with lighter opacity */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;              /* Start at the very top */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/cloverbng.img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;        /* Cover the whole area */
+    background-position: center;
+    opacity: 0.5;                  /* Makes only the image lighter */
+    z-index: -1;                   /* Keeps the image behind everything */
+    pointer-events: none;          /* Allows clicking through the overlay */
+}
+
+/* Style for each section */
+section {
+    background: #fff;               /* White background for sections */
+    margin: 20px auto;              /* Space around sections */
+    padding: 20px;                  /* Space inside sections */
+    max-width: 600px;               /* Limits section width */
+    border-radius: 8px;             /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* Style for section headings */
+h1, h2 {
+    color: #333;                    /* Dark text for headings */
+    font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif; /* Section titles font */
+}
+
+/* Style for the LinkedIn link */
+#linkedin a {
+    color: #0a66c2;                 /* LinkedIn blue */
+    text-decoration: none;          /* Removes underline */
+    font-weight: bold;
+}
+
+#linkedin a:hover {
+    text-decoration: underline;     /* Underline on hover */
+}
+
 /* Add you CSS here */

@@ -4,8 +4,150 @@
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-  <!-- Add your HTML content here -->
+<body style="margin: 10px; padding: 0;">
+  <!-- Top Header Navigation -->
+  <header style="margin: 0; padding: 0;">
+    <!-- This is the navigation bar at the top of the page -->
+    <nav style="text-align: center; margin: 0; padding: 0;">
+      <!-- Added text-align: center; to center the navigation items -->
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <!-- The navigation items are displayed side by side using inline style -->
+        <li style="display: inline; margin-right: 15px;">
+          <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li style="display: inline; margin-right: 15px;">
+          <a href="#introduction"><i class="fa-solid fa-user"></i> About Me</a>
+        </li>
+        <li style="display: inline; margin-right: 15px;">
+          <a href="#skills"><i class="fa-solid fa-gear"></i> Skills</a>
+        </li>
+        <li style="display: inline; margin-right: 15px;">
+          <a href="#project"><i class="fa-solid fa-folder-open"></i> Project</a>
+        </li>
+        <li style="display: inline; margin-right: 15px;">
+          <a href="#contact"><i class="fa-solid fa-address-book"></i> Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" style="position: relative; z-index: 1; overflow: hidden;">
+      <!-- Add a background image behind the Home section content -->
+      <!-- The image is absolutely positioned and sized to fit within the section borders -->
+      <img 
+        src="img/156764.gif"
+        alt="Decorative background"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;   /* Makes the image fill the section and stay inside the borders */
+          opacity: 0.2;        /* Makes the image light and not cover the text */
+          z-index: 0;
+          pointer-events: none; /* Allows clicking through the image */
+        ">
+      <!-- This is the home section with your greeting -->
+      <h1 style="text-align: center; position: relative; z-index: 1; font-family: 'Snell Roundhand', cursive; font-size: 2.5em; font-weight: bold;">
+        Hello, I'm Tu Anh Nguyen
+      </h1>
+      <!-- Subtitle under the main greeting, moved even closer to the heading -->
+      <p style="text-align: center; font-size: 1.2em; color: #555; position: relative; z-index: .5; margin-top: 2px;">
+        perfer to be called Tussy (๑>؂•̀๑)
+      </p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="introduction">
+      <!-- This is the about me section with your introduction --> 
+      <!-- Display your image above the About Me header -->
+      <img src="img/IMG_3572.jpg" alt="A photo of Tu Anh Nguyen" 
+           style="width:200px; height:200px; object-fit:cover; border-radius:50%; display:block; margin: 0 auto;">
+         
+      <h2 style="text-align: center;">.𖥔 ݁ ˖๋ ࣭ ⭑ About Me .𖥔 ݁ ˖๋ ࣭ ⭑</h2>
+
+      <p>Welcome to my personal website! I am learning web development and excited to share my journey. ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+      <!-- List your skills here -->
+      <h2>.☘︎ ݁˖ My Skills .☘︎ ݁˖</h2>
+      <!-- Add small headers above each skill image to label them -->
+      <div style="text-align: center;">
+        <!-- Skill labels centered above the images -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <!-- Skill labels and images in a single row, both centered -->
+          <div style="display: flex; flex-direction: row; justify-content: center; gap: 50px;">
+            <!-- Each label is in a column with its image, so they are perfectly centered -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <span style="width:60px; font-size: 0.9em; text-align:center;">HTML</span>
+              <img src="img/html_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.png" alt="HTML Icon" style="width:40px;">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <span style="width:60px; font-size: 0.9em; text-align:center;">CSS</span>
+              <img src="img/css_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.png" alt="CSS Icon" style="width:40px;">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <span style="width:60px; font-size: 0.9em; text-align:center;">Database</span>
+              <img src="img/database_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.png" alt="Database Icon" style="width:40px;">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <span style="width:80px; font-size: 0.9em; text-align:center;">JavaScript</span>
+              <img src="img/javascript_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.png" alt="JavaScript Icon" style="width:40px;">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project">
+      <!-- This is the project section where you can share your work -->
+      <h2>. ݁₊ ⊹ . ݁˖ . ݁ My projects . ݁₊ ⊹ . ݁˖ . ݁</h2>
+      <p>Some projects I've worked on in 2025:</p>
+      <ul>
+        <li>
+          <strong>Personal Website</strong> - This website is my first project. It helps me practice HTML and CSS. Hoping this website will be a good start for my web development journey. 
+        </li>
+        <li>
+          <strong>Project Management</strong> - Worked alongside SF New Deal (non-profit organization) to proposed an improved system that outlined ROI projections, cost-saving opportunities, and an estimated payback period—tailored specifically for a nonprofit environment. 
+        <!-- Add more projects as you create them -->
+      </ul>
+  </section>
+
+  <!-- LinkedIn Section -->
+  <section id="contact">
+      <!-- Link to your LinkedIn profile -->
+      <h2>°❀⋆.ೃ࿔*:･ Connect with me °❀⋆.ೃ࿔*:･</h2>
+      <!-- The link needs "https://" at the beginning to work correctly -->
+      <a href="https://www.linkedin.com/in/tuanhnguyen0908" target="_blank">
+          Visit my LinkedIn Profile
+      </a>
+      
+      <!-- Email Me section -->
+      <!-- This section lets people email you by clicking the link -->
+      <p style="text-align: left; margin-top: 10px;">
+        Email me: 
+        <a href="mailto:tussynguven@gmail.com">tussynguven@gmail.com</a>
+      </p>
+
+      <!-- Add a blended rose.gif image in the contact section, centered and below the link -->
+      <img 
+        src="img/rose.gif" 
+        alt="Rose" 
+        style="
+          display: block;
+          margin: 20px auto 0 auto;
+          width: 120px;
+          opacity: 0.5; /* Makes the image blend softly */
+          mix-blend-mode: multiply; /* Blends the image with the background */
+        ">
+  </section>
 </body>
 </html>
